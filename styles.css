@@ -7,9 +7,7 @@ body {
 
 header { 
     width: 265px; 
-    height: 70px; 
-    margin: 0 auto 40px; 
-    padding: 15px;
+    margin: 20px auto 40px; 
 }
 
 #header-icon {
@@ -19,14 +17,14 @@ header {
     margin-right: 10px; 
 }
 
-header > h1 {
+.header h1 {
     margin: 5px 0 0 0;  
     color: #1b8a05; 
     text-align: left;  
     font-size: 2.1rem;
 }
 
-header > h2 {
+.header h2 {
     color: #525151; 
     text-align: left;
     margin: 0;  
@@ -35,6 +33,24 @@ header > h2 {
     font-size: 0.8rem; 
     line-height: 0.7rem; 
 }
+
+header > a {
+    text-decoration: none;
+}
+
+
+footer {
+    position: fixed; 
+    left: 0; 
+    bottom: 0; 
+    width: 100%; 
+    background-color: rgb(199, 199, 199);
+    color: #525151; 
+    font-size: 14px; 
+    padding: 10px;
+}
+
+/* recipe list */ 
 
 ul.recipe-list {
     list-style: none;
@@ -110,13 +126,26 @@ a {
     color: inherit; 
 }
 
-footer {
-    position: fixed; 
-    left: 0; 
-    bottom: 0; 
-    width: 100%; 
-    background-color: rgb(199, 199, 199);
-    color: #525151; 
-    font-size: 14px; 
-    padding: 10px;
+
+/* recipe page */ 
+
+.recipe-intro {
+    width: 900px; 
+    height: 500px; 
+    margin: auto; 
+    background-color: darksalmon; 
+    display: flex; 
+    flex-direction: row; 
 }
+
+.intro-text {
+    margin-left: 20px; 
+}
+
+.soup-photo {
+    margin-left: 0; 
+    height: 500px;
+    width: 400px; 
+    object-fit: cover;
+}
+
