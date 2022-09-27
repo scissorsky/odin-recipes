@@ -181,9 +181,22 @@ a {
     letter-spacing: 0.3rem; 
     text-transform: uppercase;  
     font-weight: lighter; 
+    font-size: 1.6rem; 
+    text-align: right; 
+    background-color: rgba(235, 86, 0, 0.938); 
+    color: var(--off-white);
+    padding: 3px 0;  
+}
+.description-h2 {
+    display: none;
+}
+
+.tags span {
+    padding: 3px 10px; 
+    border: 1px solid #a8c0a3; 
+    border-radius: 20px; 
     font-size: 0.9rem; 
-    text-align: right;
-    color: rgba(235, 86, 0, 0.938); 
+    background-color: rgb(238, 245, 238);
 }
 
 .recipe-intro ul {
