@@ -4,8 +4,6 @@
     --shadow: 3px 3px 10px #b9ab94; 
 }
 
-
-
 html {
     overflow: -moz-scrollbars-vertical; 
     overflow-y: scroll; 
@@ -15,10 +13,18 @@ html {
 body {
     margin: 0;
     padding-top: 180px; 
-    padding-bottom: 10px; 
     font-family: Georgia, 'Times New Roman', Times, serif;
     color: #494545; 
     background-color: #F1E0C5;
+}
+
+#page-container {
+    position: relative; 
+    min-height: 100vh;
+}
+
+#content-wrap {
+    padding-bottom: 2.5rem; 
 }
 
 header {
@@ -63,16 +69,17 @@ header > a {
 }
 
 
-footer {
-    position: fixed; 
+footer { 
     left: 0; 
     bottom: 0; 
-    width: 100%; 
+    height: 2.5rem;
+    line-height: 2.5rem;  
     background-color: var(--off-white);
     color: #525151; 
     font-size: 14px; 
-    padding: 10px;
+    padding: 10px; 
     border-top: 1px solid #dacbb2;
+    text-align: center; 
 }
 
 /* recipe list */ 
@@ -83,14 +90,15 @@ ul.recipe-list {
     flex-wrap: wrap; 
     align-items: stretch; 
     justify-content: center;
+    max-width: 1000px;
     padding: 0; 
-    margin: 0 auto 50px; 
+    margin: 0 auto 0; 
 }
 
 .recipe-card {
     background-color: #fdfcfb;
     border-radius: 8px; 
-    margin: 10px 15px;
+    margin: 15px;
     width: 230px; 
     height: 335px;
     box-shadow: var(--shadow); 
@@ -166,7 +174,7 @@ a {
     width: 90%; 
     max-width: 1000px; 
     height: 350px; 
-    margin: auto; 
+    margin: 15px auto 0; 
     background-color: var(--off-white);  
     display: flex; 
     flex-direction: row; 
@@ -208,7 +216,7 @@ a {
 .soup-photo {
     margin-left: 0; 
     height: 350px;
-    width: 400px; 
+    max-width: 300px;
     object-fit: cover;
     border-radius: 8px 0 0 0;
 }
@@ -255,4 +263,90 @@ a {
 .steps ol {
     margin: 0 30px 20px 20px;
 }
+
+/* media queries */ 
+
+@media only screen and (max-width: 768px) {
+
+       body {
+        padding-top: 130px; 
+    }
+
+    .recipe-intro {
+        max-width: 90%; 
+        height: 100%; 
+        display: flex; 
+        flex-direction: column; 
+    }
+
+    .recipe-intro h1 {
+        text-align: center;
+    }
+
+    .soup-photo {
+        max-width: 100%; 
+        height: 150px; 
+        border-radius: 8px 8px 0 0; 
+    }
+
+    .tags {
+        line-height: 1.8rem;
+    }
+
+}
+
+@media only screen and (max-width: 480px) {
+
+    body {
+        padding: 0; 
+        margin: 0; 
+    }
+
+    header {
+        position: relative; 
+        margin-top: 0;
+        padding-top: 25px;  
+    }
+
+    .header {
+        margin-top: 0;
+        padding: 0; 
+    }
+
+    .header h1 {
+        margin: 0; 
+    }
+
+    footer {
+        line-height: normal; 
+        padding: 10px; 
+    }
+
+    ul.recipe-list {
+        width: 460px; 
+        max-width: 90%; 
+        display: flex; 
+        flex-direction: column; 
+        margin: auto;
+        padding: 0; 
+    }
+    
+    .recipe-card {
+        width: 100%; 
+        height: 255px; 
+    }
+
+    .thumbnail {
+        width: 100%; 
+        height: 150px; 
+    }
+
+    a.recipe-link {
+        width: 450px; 
+        max-width: 90%;
+    }
+}
+
+
+
 
