@@ -135,7 +135,7 @@ footer {
 }
 
 li.servings, li.time  {
-    background-position: 0 0 1.3rem 0;
+   /* background-position: 0 0 1.3rem 0; */
     background-repeat: no-repeat;
     background-size: contain;
     padding-left: 1.3rem;
@@ -275,7 +275,8 @@ a {
 @media only screen and (max-width: 768px) {
 
     body {
-        padding-top: 130px; 
+        padding-top: 150px;
+        width: 100vw; 
     }
 
     .recipe-intro {
@@ -305,7 +306,7 @@ a {
 
     header {
         position: relative;
-        margin: 0;  
+        margin: 0 0 15px;  
     }
 
     .header {
@@ -325,14 +326,16 @@ a {
     ul.recipe-list {
         display: flex; 
         flex-direction: column; 
-        margin: auto;
+        align-items: center; 
+        flex-wrap: nowrap;
+        margin: 15px 0; 
         padding: 0; 
-        width: 460px; 
+        width: 350px; 
         max-width: 90%; 
     }
     
     .recipe-card {
-        width: 100%; 
+        width: 320px; 
         height: 255px; 
     }
 
@@ -340,9 +343,5 @@ a {
         width: 100%; 
         height: 150px; 
     }
-
-    a.recipe-link {
-        width: 450px; 
-        max-width: 90%;
-    }
+    
 }
