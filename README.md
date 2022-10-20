@@ -1,5 +1,5 @@
 # odin-recipes
-This simple recipe collection is a project for **The Odin Project**. TYou can find a detailed description (including requirements) [here](https://www.theodinproject.com/lessons/foundations-recipes). 
+This simple recipe collection is a project for **The Odin Project**. You can find a detailed description (including requirements) [here](https://www.theodinproject.com/lessons/foundations-recipes). 
 
 
 **Live preview:** https://scissorsky.github.io/odin-recipes/index.html
