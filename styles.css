@@ -37,16 +37,23 @@ header {
 }
 
 .header { 
-    display: block;
+    display: flex; 
     width: 19rem; 
     margin: 0 auto; 
 }
 
 #header-icon {
-    float: left; 
     width: auto; 
     height: 60px; 
     margin-right: 10px; 
+    flex-shrink: 1;
+}
+
+.heading {
+    display: flex; 
+    flex-direction: column;
+    flex-basis: 186px;
+    flex-shrink: 1;
 }
 
 .header h1 {
@@ -135,7 +142,6 @@ footer {
 }
 
 li.servings, li.time  {
-   /* background-position: 0 0 1.3rem 0; */
     background-repeat: no-repeat;
     background-size: contain;
     padding-left: 1.3rem;
