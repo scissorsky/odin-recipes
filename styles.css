@@ -46,13 +46,11 @@ header {
     width: auto; 
     height: 60px; 
     margin-right: 10px; 
-    flex-shrink: 1;
 }
 
 .heading {
     display: flex; 
     flex-direction: column;
-    flex-basis: 186px;
     flex-shrink: 1;
 }
 
@@ -317,6 +315,8 @@ a {
 
     .header {
         width: 16rem; 
+        flex-basis: 60%; 
+        flex-shrink: 1;
     }
 
     .header h1 {
@@ -342,7 +342,8 @@ a {
     
     .recipe-card {
         width: 320px; 
-        height: 255px; 
+        height: 255px;  
+        flex-shrink: 1; 
     }
 
     .thumbnail {
@@ -350,4 +351,15 @@ a {
         height: 150px; 
     }
     
+}
+
+@media only screen and (max-width: 320px) {
+
+    ul.recipe-list {
+        width: 280px; 
+    }
+
+    .recipe-card {
+        width: 280px; 
+    }
 }
