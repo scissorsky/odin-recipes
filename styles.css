@@ -368,4 +368,8 @@ a {
         width: 280px; 
     }
 
+    .recipe-intro, .ingredients, .steps {
+        width: 280px; 
+    }
+
 }
