@@ -39,7 +39,9 @@ header {
 .header { 
     display: flex; 
     align-items: center; 
-    width: 19rem; 
+    justify-content: center; 
+    width:360px; 
+    height: 60px; 
     margin: 0 auto; 
 }
 
@@ -311,21 +313,21 @@ a {
 
     header {
         position: relative;
-        margin: 0 0 15px;  
+        margin: 0;  
     }
 
-    .header {
-        width: 230px;   
-        flex-shrink: 1;
+    .header {  
+        width: 300px; 
+        height: 60px; 
     }
 
     .header h1 {
         margin: 0; 
-        font-size: 1.8rem; 
+        font-size: 20px;  
     }
 
     header h2 {
-        font-size: 0.5rem; 
+        font-size: 8px; 
     }
 
     footer {
@@ -347,7 +349,6 @@ a {
     .recipe-card {
         width: 320px; 
         height: 255px;  
-        flex-shrink: 1; 
     }
 
     .thumbnail {
