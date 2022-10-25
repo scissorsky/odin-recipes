@@ -17,7 +17,7 @@ ___
 - [Carrot Soup: photo by Erik Mclean](https://unsplash.com/photos/J8rOU9Igips)
 - [Cheese Soup: photo by Olga Kudriavtseva](https://unsplash.com/photos/JIjtV1gmfxo)
 
--Recipe Credit
+## Recipe Credit
 - [Tomato Soup: recipe by Marbalet](https://www.allrecipes.com/recipe/13113/rich-and-creamy-tomato-basil-soup/)
 - [Curry Pumpkin Soup: recipe by Mary Ingram](https://www.allrecipes.com/recipe/25657/curry-pumpkin-soup/)
 - [Mushroom Soup: recipe by Michelle Chen](https://www.allrecipes.com/recipe/13133/cream-of-mushroom-soup-ii/)
